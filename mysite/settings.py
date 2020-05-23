@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '!uwid4q5n#=+!^!h49&v_%vt@tb^+7ey%dnu7!bcpk*ikd5kl='
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['pseudosodiumblogs.herokuapp.com']
+ALLOWED_HOSTS = []
 TINYMCE_DEFAULT_CONFIG = {
     'height': 360,
     'width': 1120,
@@ -148,4 +148,4 @@ USE_TZ = True
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
-MEDIA_ROOT = '/var/www/mysite/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'mediafiles')
